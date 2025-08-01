@@ -1,17 +1,33 @@
-# 🌩️ Quantum Weather Forecasting
+# Quantum Weather Forecasting 🌩️☔
 
-This project was submitted for the **Quantum Dry-Hackathon** by **Team 5**.
+This project was submitted for the **Quantum AI Hackathon** by **Team 5**.
+
+## Team Members
+           
+
+- Rana Saad           
+- Sherifa Helmy       
+- Yousef Ahmed           
+- Jana Mohamed       
+
 
 ---
-
-
 ## Project Overview
+<p align="center">
+  <img src="cairoweatherimage.jpeg" alt="Cairo Weather" width="600">
+</p>
 
-This project investigates the potential of quantum machine learning for temperature forecasting by comparing classical models with quantum approaches.
+
+This project explores the potential of quantum machine learning (QML) for temperature forecasting by utilizing a dataset containing daily weather observations for Cairo, Egypt 
+
+
 
 We implemented a **Quantum Neural Network** using Qiskit Machine Learning and benchmarked it against classical linear regression, achieving remarkable results with only 2 key features.
 
-We used IBM’s **Qiskit Machine Learning** to implement a **Quantum Kernel Ridge Regression** model and benchmarked it against classical model
+
+
+
+
 
 
 ## Step-by-Step Breakdown
@@ -79,9 +95,10 @@ Epoch 300/300, Loss: 0.0038
 *The quantum model achieved 14% loss reduction while using only 25% of the features required by the classical model.*
 
 **Final Quantum Metrics:**  
-- **MSE**: 6.2681  
-- **RMSE**: 2.5036  
-- Training Efficiency: 365 samples vs 5000+ in classical approach  
+- Training MSE: 5.9581, R²: 0.8490
+- Testing MSE: 6.3072, R²: 0.8338
+
+Training Efficiency: 365 samples vs 5000+ in classical approach  
 
 *While absolute metrics currently favor classical methods, our quantum model demonstrates:*
 1. Superior feature efficiency (2 vs 8 features)  
@@ -91,13 +108,13 @@ Epoch 300/300, Loss: 0.0038
 
 
 ## Challenges and Solutions
-**Challenge 1 : Quantum Resource Optimization**  
-   - Limited qubits required careful feature selection  
-   - **Solution**: Implemented advanced feature importance analysis to identify the 2 most quantum-appropriate features
+**Challenge 1 :  Long Quantum Simulation Time**  
+   - Simulating quantum circuits on classical hardware is computationally expensive and time-consuming
+   - **Solution**: we selected the two most important features to reduce input dimensionality. 
      
 **Challenge 2 : Training Quantum Models**
    - The quantum model training was unstable and sometimes got stuck in local minima.
-   - **Solution**: Used AdamW optimizer with Huber loss and a learning rate schedule to help the model learn smoothly.
+   - **Solution**: Used AdamW optimizer with Huber loss and a learning rate schedule to  stabilize training and help the model learn smoothly.
 
 
      
@@ -119,20 +136,16 @@ Epoch 300/300, Loss: 0.0038
 
 ---
 
+
 ## How to Run the Quantum Project
 
-1. **Clone the repository**
-2.  **Access the Quantum Notebook**  
-   - Open `QML_WeatherForcasting.ipynb` in Google Colab
-     
+1. **Download `QML_WeatherForcasting.ipynb` from the  repository**
+2. Open `QML_WeatherForcasting.ipynb` in Google Colab     
 3. **Upload the Dataset**
    - Download the dataset from [Cairo Weather - Kaggle](https://www.kaggle.com/datasets/yousefelshahat2/cairo-whether).
    - In Google Colab, upload the CSV file
 
 ## Future Quantum Improvements
-
-**Hardware Deployment**  
+1. **Potential improvements with an additional complementary feature**  
+2. **Hardware Deployment**  
    - Migrate to real quantum processors as they become available  
-
-
----
