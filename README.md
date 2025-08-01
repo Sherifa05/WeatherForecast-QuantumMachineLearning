@@ -130,6 +130,9 @@ Training Efficiency: 365 samples vs 5000+ in classical approach
 - pandas
 - scikit-learn
 - matplotlib
+- qiskit
+- qiskit-machine-learning
+- torch 
 
 ### Recommended Platform
 - Google Colab Pro (for accelerated quantum simulations)
