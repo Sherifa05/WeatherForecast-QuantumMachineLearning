@@ -1,6 +1,6 @@
 # Quantum Weather Forecasting 🌩️☔
 
-This project was submitted for the **Quantum AI Hackathon** by **Team 5**.
+This project was submitted for the Quantum AI Hackathon by Team 5 and won 2nd place.
 
 ## Team Members
            
